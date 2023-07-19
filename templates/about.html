@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block Age %}
+    {% for post in posts%}
+    Author: {{post.Author}}
+    <h5>Book: {{post.Book}}</h5>
+    <h5>Content: {{post.Content}}</h5>
+    <h5>Age: {{post.age}}</h5>
+    {%endfor%}
+{% endblock Age %}
